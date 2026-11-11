@@ -1,0 +1,58 @@
+:root{--navy:#0C1631;--navy2:#16224A;--ivory:#FAF8F2;--ink:#17203A;--muted:#5E6679;--gold:#D4B26A;--gold-d:#8F6F2A;--line:#E6E0D0;color-scheme:light}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ivory);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;line-height:1.8;font-size:17px}
+a{color:inherit}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.dark{background:var(--navy);color:#F4EFE3}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 85% 10%,rgba(212,178,106,.30),transparent 45%),radial-gradient(circle at 10% 90%,rgba(80,110,200,.30),transparent 50%),var(--navy)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+nav strong{font-weight:800;color:var(--gold)}
+.navr{display:flex;gap:18px;align-items:center;font-size:.95rem}
+.navr a{text-decoration:none;opacity:.8}
+.navr a:hover{opacity:1;color:var(--gold)}
+button{font:600 .9rem "IBM Plex Sans Arabic",sans-serif;background:none;border:1px solid rgba(212,178,106,.6);color:var(--gold);border-radius:999px;padding:2px 14px;cursor:pointer}
+a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.hi{padding:64px 0 56px}
+.eyebrow{color:var(--gold);font-weight:600;letter-spacing:.05em;margin:0 0 10px}
+.hi h1{font-size:clamp(2.6rem,9vw,5rem);font-weight:700;line-height:1.15;margin:0}
+.hi h1 span{background:linear-gradient(90deg,#E9CD85,var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hi p.lead{max-width:52ch;opacity:.85;margin:18px 0 28px;font-size:1.05rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:10px 26px;border-radius:999px;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.gold{background:var(--gold);color:var(--navy)}
+.btn.ghost{border:1.5px solid rgba(244,239,227,.5)}
+.stats{display:flex;gap:34px;flex-wrap:wrap;margin-top:44px;padding-top:26px;border-top:1px solid rgba(244,239,227,.18)}
+.stats b{display:block;font-size:2rem;font-weight:800;color:var(--gold);line-height:1.2}
+.stats span{font-size:.9rem;opacity:.75}
+section{padding:60px 0}
+h2{font-size:clamp(1.8rem,5vw,2.4rem);font-weight:800;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 32px}
+.grid{display:grid;gap:20px}
+@media(min-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:26px;display:flex;flex-direction:column;gap:6px;transition:transform .25s,box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(15,26,51,.12);border-color:var(--gold)}
+.num{font-size:2.6rem;font-weight:700;line-height:1;color:var(--gold)}
+.card h3{margin:4px 0 0;font-size:1.3rem;font-weight:800}
+.card p{margin:0;color:var(--muted);font-size:.97rem}
+.meta{font-size:.82rem;font-weight:600;color:var(--gold-d);margin-top:6px}
+.cl{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.cl a{text-decoration:none;font-weight:700;font-size:.92rem;padding:5px 18px;border-radius:999px}
+.cl .live{background:var(--navy);color:var(--ivory)}
+.cl .code{border:1.5px solid var(--navy)}
+.chips{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:0;list-style:none}
+.chips li{border:1.5px solid var(--gold);color:var(--gold-d);font-weight:700;padding:3px 18px;border-radius:999px;background:#fff}
+.contact{text-align:center}
+.contact h2{color:#fff}
+.contact p{opacity:.8;margin:0 0 22px}
+.mail{display:inline-block;font-size:clamp(1.1rem,4.5vw,1.8rem);font-weight:800;color:var(--gold);text-decoration:none;border-bottom:2px solid var(--gold);padding-bottom:2px;word-break:break-all}
+.links{margin-top:26px;display:flex;gap:14px;justify-content:center}
+footer{padding:22px 0 30px;text-align:center;font-size:.88rem;opacity:.65}
+.fade{animation:up .8s both}
+@keyframes up{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.fade{animation:none}.card,.btn{transition:none}html{scroll-behavior:auto}}
+
+.card{border-top:3px solid var(--gold)}
+.about p{color:var(--ink);font-size:1.03rem;max-width:none}
+.about:hover{transform:none;box-shadow:none;border-color:var(--line)}
